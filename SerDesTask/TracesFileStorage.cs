@@ -1,10 +1,5 @@
-﻿namespace BinarySerialization;
+﻿namespace SerDesTask;
 
-/*
-4 bytes - VehicleId
-8 bytes - Latitude
-8 bytes - Longitude
-*/
 internal class TracesFileStorage
 {
     public Trace[] ReadFromFile(string path) =>

@@ -1,4 +1,4 @@
-﻿using BinarySerialization;
+﻿using SerDesTask;
 
 const string path = "test.bin";
 
@@ -13,11 +13,11 @@ var initialTraces = new[]
     new Trace(3, 82, 102)
 };
 
-// Write traces to file.
+// Write traces to the storage.
 storage.WriteToFile(path, initialTraces);
 
-// Read traces from the same file.
+// Read traces from the storage.
 var deserializedTraces = storage.ReadFromFile(path);
 
-// Technically our traces should be the same!
-var isSuccess = initialTraces.SequenceEqual(deserializedTraces);
+// Our traces should be the same!
+Console.WriteLine(initialTraces.SequenceEqual(deserializedTraces));

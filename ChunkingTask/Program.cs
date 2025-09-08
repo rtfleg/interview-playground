@@ -7,7 +7,7 @@ foreach(var (count, chunkSize) in EnumerateCases())
         break;
     }
 
-Console.WriteLine($"{Environment.NewLine}All tests passed!");
+Console.WriteLine("All tests passed!");
 return;
 
 
